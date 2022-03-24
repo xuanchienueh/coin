@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+@mixin canhgiua {
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin div_main($height: 60px) {
+  width: 528px;
+  height: $height;
+  border-radius: 12px;
+  background-color: #24252e;
+}
+
+$primary-color: #e9b21e;
+$secondary-color: #c29523;
+.primary_color {
+  color: #e9b21e;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.second_color {
+  color: #947222;
+  font-size: 1.2rem;
+}
+.color_white {
+  color: rgba(255, 255, 255, 0.8);
+}
+#root {
+  width: 100%;
+  height: 100%;
+  background: #16181f;
+}
+.container {
+  .title_top {
+    color: $primary-color;
+    text-align: center;
+    h3 {
+      font-size: 24px;
+    }
+  }
+}
+header {
+  background-color: #24252e;
+  height: 80px;
+  .row {
+    .content_header {
+      h3 {
+        color: $primary-color;
+        font-size: 20px;
+        text-align: center;
+        line-height: 80px;
+        margin-bottom: 0;
+      }
+    }
+
+    .img_phone {
+      width: 36px;
+    }
+  }
+}
+.container.body {
+  width: 534px;
+  margin: 2rem auto;
+  .img_logo {
+    width: 220px;
+    @include canhgiua;
+  }
+  .mt-5 {
+    .coin {
+      @include div_main(60px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        font-size: 1.2rem;
+      }
+    }
+    .tygia {
+      @include div_main(96px);
+
+      margin: 1rem 0;
+      .color_white {
+        text-align: center;
+        font-size: 1.2rem;
+        padding-top: 11px;
+      }
+    }
+  }
+  .muaban {
+    @include div_main(274px);
+    .nav-tabs {
+      border: none;
+      .nav-item {
+        width: 50%;
+        display: block;
+        .nav-link {
+          display: block;
+          text-align: center;
+          border: none;
+          color: #947222;
+          font-weight: 600;
+          background-color: #16181f;
+        }
+        .nav-link.active {
+          background-color: #24252e;
+          color: #e9b21e;
+          border-bottom: 2px solid #16181f;
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+        }
+      }
+    }
+    .tab-content {
+      #mua_coin,
+      #ban_coin {
+        .input_mb {
+          width: 412px;
+          margin-bottom: 1rem;
+          @include canhgiua();
+          label {
+            display: inline-block;
+            width: 100px;
+          }
+          input,
+          select {
+            background-color: #16181f;
+            border: none;
+            outline: none;
+            text-align: center;
+            width: 300px;
+            padding: 0.25rem 0.5rem;
+            color: wheat;
+            border-radius: 8px;
+          }
+          .quantity {
+            width: 90px;
+          }
+          .money {
+            width: 190px;
+            display: inline-block;
+          }
+        }
+        .btn {
+          margin-left: 50%;
+          transform: translateX(-50%);
+          background-color: $primary-color;
+          color: #16181f;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

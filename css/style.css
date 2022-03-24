@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.primary_color {
+  color: #e9b21e;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.second_color {
+  color: #947222;
+  font-size: 1.2rem;
+}
+
+.color_white {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  background: #16181f;
+}
+
+.container .title_top {
+  color: #e9b21e;
+  text-align: center;
+}
+.container .title_top h3 {
+  font-size: 24px;
+}
+
+header {
+  background-color: #24252e;
+  height: 80px;
+}
+header .row .content_header h3 {
+  color: #e9b21e;
+  font-size: 20px;
+  text-align: center;
+  line-height: 80px;
+  margin-bottom: 0;
+}
+header .row .img_phone {
+  width: 36px;
+}
+
+.container.body {
+  width: 534px;
+  margin: 2rem auto;
+}
+.container.body .img_logo {
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container.body .mt-5 .coin {
+  width: 528px;
+  height: 60px;
+  border-radius: 12px;
+  background-color: #24252e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container.body .mt-5 .coin span {
+  font-size: 1.2rem;
+}
+.container.body .mt-5 .tygia {
+  width: 528px;
+  height: 96px;
+  border-radius: 12px;
+  background-color: #24252e;
+  margin: 1rem 0;
+}
+.container.body .mt-5 .tygia .color_white {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 11px;
+}
+.container.body .muaban {
+  width: 528px;
+  height: 274px;
+  border-radius: 12px;
+  background-color: #24252e;
+}
+.container.body .muaban .nav-tabs {
+  border: none;
+}
+.container.body .muaban .nav-tabs .nav-item {
+  width: 50%;
+  display: block;
+}
+.container.body .muaban .nav-tabs .nav-item .nav-link {
+  display: block;
+  text-align: center;
+  border: none;
+  color: #947222;
+  font-weight: 600;
+  background-color: #16181f;
+}
+.container.body .muaban .nav-tabs .nav-item .nav-link.active {
+  background-color: #24252e;
+  color: #e9b21e;
+  border-bottom: 2px solid #16181f;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.container.body .muaban .tab-content #mua_coin .input_mb,
+.container.body .muaban .tab-content #ban_coin .input_mb {
+  width: 412px;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container.body .muaban .tab-content #mua_coin .input_mb label,
+.container.body .muaban .tab-content #ban_coin .input_mb label {
+  display: inline-block;
+  width: 100px;
+}
+.container.body .muaban .tab-content #mua_coin .input_mb input,
+.container.body .muaban .tab-content #mua_coin .input_mb select,
+.container.body .muaban .tab-content #ban_coin .input_mb input,
+.container.body .muaban .tab-content #ban_coin .input_mb select {
+  background-color: #16181f;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 300px;
+  padding: 0.25rem 0.5rem;
+  color: wheat;
+  border-radius: 8px;
+}
+.container.body .muaban .tab-content #mua_coin .input_mb .quantity,
+.container.body .muaban .tab-content #ban_coin .input_mb .quantity {
+  width: 90px;
+}
+.container.body .muaban .tab-content #mua_coin .input_mb .money,
+.container.body .muaban .tab-content #ban_coin .input_mb .money {
+  width: 190px;
+  display: inline-block;
+}
+.container.body .muaban .tab-content #mua_coin .btn,
+.container.body .muaban .tab-content #ban_coin .btn {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background-color: #e9b21e;
+  color: #16181f;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */
