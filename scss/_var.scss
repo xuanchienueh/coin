@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+@mixin canhgiua {
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin div_main($height: 60px) {
+  width: 528px;
+  height: $height;
+  border-radius: 12px;
+  background-color: #24252e;
+}
+@mixin flex($justify: space-evenly, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+$primary-color: #e9b21e;
+$secondary-color: #c29523;
+.primary_color {
+  color: #e9b21e;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.second_color {
+  color: #947222;
+  font-size: 1.2rem;
+}
+.color_white {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+$res_mobile: "only screen and (max-width: 576px)";
+@mixin responsive_mobile() {
+  @media #{$res_mobile} {
+    @content;
+  }
+}
+
+@include responsive_mobile {
+  .primary_color {
+    color: #e9b21e;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .color_white {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+  }
+}

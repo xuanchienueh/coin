@@ -1,0 +1,46 @@
+@import "var";
+$res_pc: "only screen and (min-width: 992px)";
+
+@mixin responsive_pc() {
+  @media #{$res_pc} {
+    @content;
+  }
+}
+
+@include responsive_pc {
+  .container {
+    .title_top {
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .container.body {
+    width: 534px;
+
+    .mt-5 {
+      .coin {
+        @include div_main(60px);
+      }
+      .tygia {
+        @include div_main(96px);
+      }
+    }
+    .support {
+      display: block;
+    }
+  }
+
+  .container {
+    .update_exchange {
+      .content {
+        li {
+          .color_white {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

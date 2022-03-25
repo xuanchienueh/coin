@@ -1,0 +1,84 @@
+@import "var";
+// mobile
+$res_mobile: "only screen and (max-width: 576px)";
+@mixin responsive_mobile() {
+  @media #{$res_mobile} {
+    @content;
+  }
+}
+@include responsive_mobile {
+  body {
+    font-size: 12px;
+  }
+  .container {
+    .title_top {
+      text-align: center;
+      padding: 10px 0;
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+  header {
+    height: 4rem;
+    .row {
+      .content_header_mobile {
+        display: none;
+      }
+      .content_header {
+        h3 {
+          line-height: 66px;
+        }
+      }
+    }
+  }
+  .container.body {
+    .mt-5 {
+      .coin {
+        width: 100%;
+        background-color: #24252e;
+        padding: 1rem 0;
+        border-radius: 12px;
+        span {
+          font-size: 1rem;
+        }
+      }
+      .tygia {
+        width: 100%;
+        border-radius: 12px;
+        background-color: #24252e;
+        padding-bottom: 0.9rem;
+      }
+    }
+    .muaban {
+      width: 100%;
+      .tab-content {
+        #mua_coin,
+        #ban_coin {
+          .input_mb {
+            input {
+              width: 200px;
+            }
+            .money {
+              width: 120px;
+            }
+            select {
+              width: 200px;
+            }
+            .quantity {
+              width: 66px;
+            }
+          }
+        }
+      }
+    }
+    .support {
+      display: none !important;
+    }
+  }
+  .container.copyright {
+    h3.primary_color {
+      font-size: 0.8rem;
+    }
+  }
+}

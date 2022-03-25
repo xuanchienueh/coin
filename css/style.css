@@ -32,23 +32,108 @@ a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
+@media only screen and (max-width: 576px) {
+  .primary_color {
+    color: #e9b21e;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .color_white {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.primary_color {
+  color: #e9b21e;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.second_color {
+  color: #947222;
+  font-size: 1.2rem;
+}
+
+.color_white {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 576px) {
+  .primary_color {
+    color: #e9b21e;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .color_white {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container .title_top h3 {
+    font-size: 1.5rem;
+  }
+
+  .container.body {
+    width: 534px;
+  }
+  .container.body .mt-5 .coin {
+    width: 528px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: #24252e;
+  }
+  .container.body .mt-5 .tygia {
+    width: 528px;
+    height: 96px;
+    border-radius: 12px;
+    background-color: #24252e;
+  }
+  .container.body .support {
+    display: block;
+  }
+
+  .container .update_exchange .content li .color_white {
+    font-size: 1.2rem;
+  }
+}
 #root {
   width: 100%;
   height: 100%;
   background: #16181f;
+  padding-bottom: 4px;
 }
 
 .container .title_top {
   color: #e9b21e;
   text-align: center;
-}
-.container .title_top h3 {
-  font-size: 24px;
+  padding: 10px 0;
 }
 
 header {
   background-color: #24252e;
-  height: 80px;
+  height: 5rem;
 }
 header .row .content_header h3 {
   color: #e9b21e;
@@ -62,19 +147,18 @@ header .row .img_phone {
 }
 
 .container.body {
-  width: 534px;
   margin: 2rem auto;
+  position: relative;
 }
 .container.body .img_logo {
   width: 220px;
   margin-left: auto;
   margin-right: auto;
 }
+.container.body .img_logo .logo {
+  margin-left: 16px;
+}
 .container.body .mt-5 .coin {
-  width: 528px;
-  height: 60px;
-  border-radius: 12px;
-  background-color: #24252e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,10 +167,6 @@ header .row .img_phone {
   font-size: 1.2rem;
 }
 .container.body .mt-5 .tygia {
-  width: 528px;
-  height: 96px;
-  border-radius: 12px;
-  background-color: #24252e;
   margin: 1rem 0;
 }
 .container.body .mt-5 .tygia .color_white {
@@ -163,6 +243,186 @@ header .row .img_phone {
   background-color: #e9b21e;
   color: #16181f;
   font-weight: 600;
+}
+.container.body .muaban .tab-content #mua_coin .btn:hover,
+.container.body .muaban .tab-content #ban_coin .btn:hover {
+  background-color: #c29523;
+  color: #16181f;
+}
+.container.body .support {
+  position: absolute;
+  right: -378px;
+  top: 136px;
+}
+.container.body .support h3 {
+  background-color: #24252e;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+.container.body .support img {
+  width: 90px;
+  margin-left: 12px;
+}
+
+.container .update_exchange .update .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .update_exchange .update .title span {
+  margin: 0 0.2rem;
+  padding: 6px 0;
+}
+.container .update_exchange .update .content {
+  border-radius: 8px;
+}
+.container .update_exchange .update .content li:first-child {
+  border-radius: 8px;
+}
+.container .update_exchange .update .content li:nth-child(2) {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.container .update_exchange .update .content li:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.container .update_exchange .update .content li {
+  background-color: #24252e;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .update_exchange .update .content li span {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+}
+.container .update_exchange .update .content li .bd-left {
+  border-left: 2px solid #e9b21e;
+  padding-left: 8px;
+  line-height: 1;
+}
+.container .update_exchange .update .content li .color_white {
+  letter-spacing: 1px;
+}
+
+.container.copyright h3.primary_color {
+  text-align: center;
+  padding: 40px 0 50px 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.primary_color {
+  color: #e9b21e;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.second_color {
+  color: #947222;
+  font-size: 1.2rem;
+}
+
+.color_white {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 576px) {
+  .primary_color {
+    color: #e9b21e;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .color_white {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container .title_top {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .container .title_top h3 {
+    font-size: 1rem;
+  }
+
+  header {
+    height: 4rem;
+  }
+  header .row .content_header_mobile {
+    display: none;
+  }
+  header .row .content_header h3 {
+    line-height: 66px;
+  }
+
+  .container.body .mt-5 .coin {
+    width: 100%;
+    background-color: #24252e;
+    padding: 1rem 0;
+    border-radius: 12px;
+  }
+  .container.body .mt-5 .coin span {
+    font-size: 1rem;
+  }
+  .container.body .mt-5 .tygia {
+    width: 100%;
+    border-radius: 12px;
+    background-color: #24252e;
+    padding-bottom: 0.9rem;
+  }
+  .container.body .muaban {
+    width: 100%;
+  }
+  .container.body .muaban .tab-content #mua_coin .input_mb input,
+.container.body .muaban .tab-content #ban_coin .input_mb input {
+    width: 200px;
+  }
+  .container.body .muaban .tab-content #mua_coin .input_mb .money,
+.container.body .muaban .tab-content #ban_coin .input_mb .money {
+    width: 120px;
+  }
+  .container.body .muaban .tab-content #mua_coin .input_mb select,
+.container.body .muaban .tab-content #ban_coin .input_mb select {
+    width: 200px;
+  }
+  .container.body .muaban .tab-content #mua_coin .input_mb .quantity,
+.container.body .muaban .tab-content #ban_coin .input_mb .quantity {
+    width: 66px;
+  }
+  .container.body .support {
+    display: none !important;
+  }
+
+  .container.copyright h3.primary_color {
+    font-size: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

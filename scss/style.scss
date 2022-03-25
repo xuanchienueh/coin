@@ -1,61 +1,22 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-a {
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-  }
-}
-@mixin canhgiua {
-  margin-left: auto;
-  margin-right: auto;
-}
-@mixin div_main($height: 60px) {
-  width: 528px;
-  height: $height;
-  border-radius: 12px;
-  background-color: #24252e;
-}
+@import "var";
+@import "pc";
 
-$primary-color: #e9b21e;
-$secondary-color: #c29523;
-.primary_color {
-  color: #e9b21e;
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-.second_color {
-  color: #947222;
-  font-size: 1.2rem;
-}
-.color_white {
-  color: rgba(255, 255, 255, 0.8);
-}
 #root {
   width: 100%;
   height: 100%;
   background: #16181f;
+  padding-bottom: 4px;
 }
 .container {
   .title_top {
     color: $primary-color;
     text-align: center;
-    h3 {
-      font-size: 24px;
-    }
+    padding: 10px 0;
   }
 }
 header {
   background-color: #24252e;
-  height: 80px;
+  height: 5rem;
   .row {
     .content_header {
       h3 {
@@ -73,15 +34,17 @@ header {
   }
 }
 .container.body {
-  width: 534px;
   margin: 2rem auto;
+  position: relative;
   .img_logo {
     width: 220px;
     @include canhgiua;
+    .logo {
+      margin-left: 16px;
+    }
   }
   .mt-5 {
     .coin {
-      @include div_main(60px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -90,8 +53,6 @@ header {
       }
     }
     .tygia {
-      @include div_main(96px);
-
       margin: 1rem 0;
       .color_white {
         text-align: center;
@@ -160,8 +121,145 @@ header {
           background-color: $primary-color;
           color: #16181f;
           font-weight: 600;
+          &:hover {
+            background-color: $secondary-color;
+            color: #16181f;
+          }
+        }
+      }
+    }
+  }
+  .support {
+    position: absolute;
+    right: -378px;
+    top: 136px;
+    h3 {
+      background-color: #24252e;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+    }
+    img {
+      width: 90px;
+      margin-left: 12px;
+    }
+  }
+}
+.container {
+  .update_exchange {
+    .update {
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          margin: 0 0.2rem;
+          padding: 6px 0;
+        }
+      }
+
+      .content {
+        border-radius: 8px;
+        li:first-child {
+          border-radius: 8px;
+        }
+        li:nth-child(2) {
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+        li:last-child {
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+        }
+        li {
+          background-color: #24252e;
+          padding: 0.3rem;
+          @include flex(space-around, center);
+          span {
+            display: inline-block;
+            text-align: center;
+            width: 150px;
+          }
+          .bd-left {
+            border-left: 2px solid $primary-color;
+            padding-left: 8px;
+            line-height: 1;
+          }
+          .color_white {
+            letter-spacing: 1px;
+          }
         }
       }
     }
   }
 }
+.container.copyright {
+  h3.primary_color {
+    text-align: center;
+    padding: 40px 0 50px 0;
+  }
+}
+@import "mobile";
+// mobile
+// $res_mobile: "only screen and (max-width: 576px)";
+// @mixin responsive_mobile() {
+//   @media #{$res_mobile} {
+//     @content;
+//   }
+// }
+// @include responsive_mobile {
+//   body {
+//     font-size: 12px;
+//   }
+//   .container {
+//     .title_top {
+//       text-align: center;
+//       padding: 10px 0;
+//       h3 {
+//         font-size: 1rem;
+//       }
+//     }
+//   }
+//   header {
+//     height: 4rem;
+//     .row {
+//       .content_header_mobile {
+//         display: none;
+//       }
+//     }
+//   }
+//   .container.body {
+//     .mt-5 {
+//       .coin {
+//         width: 90%;
+//       }
+//       .tygia {
+//         width: 90%;
+//       }
+//     }
+//     .muaban {
+//       width: 100%;
+//       .tab-content {
+//         #mua_coin,
+//         #ban_coin {
+//           .input_mb {
+//             input {
+//               width: 200px;
+//             }
+//             .money {
+//               width: 120px;
+//             }
+//             select {
+//               width: 200px;
+//             }
+//             .quantity {
+//               width: 66px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     .support {
+//       display: none !important;
+//     }
+//   }
+// }
