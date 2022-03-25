@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -50,6 +54,10 @@ a:hover {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -91,8 +99,11 @@ a:hover {
   }
 }
 @media only screen and (min-width: 992px) {
+  .container .title_top {
+    height: 50px;
+  }
   .container .title_top h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .container.body {
@@ -133,11 +144,11 @@ a:hover {
 
 header {
   background-color: #24252e;
-  height: 5rem;
+  height: 4.5rem;
 }
 header .row .content_header h3 {
   color: #e9b21e;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
   line-height: 80px;
   margin-bottom: 0;
@@ -159,8 +170,14 @@ header .row .img_phone {
   margin-left: 16px;
 }
 .container.body .mt-5 .coin {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .container.body .mt-5 .coin span {
@@ -221,11 +238,33 @@ header .row .img_phone {
   background-color: #16181f;
   border: none;
   outline: none;
-  text-align: center;
+  text-align: left;
   width: 300px;
   padding: 0.25rem 0.5rem;
-  color: wheat;
+  color: #757575;
   border-radius: 8px;
+}
+.container.body .muaban .tab-content #mua_coin .input_mb input::-webkit-input-placeholder,
+.container.body .muaban .tab-content #ban_coin .input_mb input::-webkit-input-placeholder {
+  font-style: italic;
+}
+.container.body .muaban .tab-content #mua_coin .input_mb input::-moz-placeholder,
+.container.body .muaban .tab-content #ban_coin .input_mb input::-moz-placeholder {
+  font-style: italic;
+}
+.container.body .muaban .tab-content #mua_coin .input_mb input:-ms-input-placeholder,
+.container.body .muaban .tab-content #ban_coin .input_mb input:-ms-input-placeholder {
+  font-style: italic;
+}
+.container.body .muaban .tab-content #mua_coin .input_mb input::-ms-input-placeholder,
+.container.body .muaban .tab-content #ban_coin .input_mb input::-ms-input-placeholder {
+  font-style: italic;
+}
+.container.body .muaban .tab-content #mua_coin .input_mb input::placeholder,
+.container.body .muaban .tab-content #mua_coin .input_mb select,
+.container.body .muaban .tab-content #ban_coin .input_mb input::placeholder,
+.container.body .muaban .tab-content #ban_coin .input_mb select {
+  font-style: italic;
 }
 .container.body .muaban .tab-content #mua_coin .input_mb .quantity,
 .container.body .muaban .tab-content #ban_coin .input_mb .quantity {
@@ -239,10 +278,15 @@ header .row .img_phone {
 .container.body .muaban .tab-content #mua_coin .btn,
 .container.body .muaban .tab-content #ban_coin .btn {
   margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   background-color: #e9b21e;
   color: #16181f;
   font-weight: 600;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .container.body .muaban .tab-content #mua_coin .btn:hover,
 .container.body .muaban .tab-content #ban_coin .btn:hover {
@@ -265,8 +309,14 @@ header .row .img_phone {
 }
 
 .container .update_exchange .update .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .container .update_exchange .update .title span {
@@ -317,6 +367,10 @@ header .row .img_phone {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -421,6 +475,7 @@ a:hover {
     top: 585px;
   }
   .container.body .support h3 {
+    -webkit-box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.2);
   }
 
