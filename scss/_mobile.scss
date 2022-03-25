@@ -73,7 +73,12 @@ $res_mobile: "only screen and (max-width: 576px)";
       }
     }
     .support {
-      display: none !important;
+      // display: none !important;
+      right: 4px;
+      top: 585px;
+      h3 {
+        box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.2);
+      }
     }
   }
   .container.copyright {
