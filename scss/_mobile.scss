@@ -10,6 +10,9 @@ $res_mobile: "only screen and (max-width: 576px)";
   body {
     font-size: 12px;
   }
+  #root {
+    overflow: hidden;
+  }
 
   .container {
     .title_top {

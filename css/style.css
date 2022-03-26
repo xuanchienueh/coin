@@ -418,6 +418,10 @@ a:hover {
     font-size: 12px;
   }
 
+  #root {
+    overflow: hidden;
+  }
+
   .container .title_top {
     text-align: center;
     padding: 10px 0;
@@ -486,9 +490,6 @@ a:hover {
   .update_exchange .update .content li span {
     width: 100px;
   }
-}
-.bg {
-  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
