@@ -87,4 +87,15 @@ $res_mobile: "only screen and (max-width: 576px)";
       font-size: 0.8rem;
     }
   }
+  .update_exchange {
+    .update {
+      .content {
+        li {
+          span {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
 }
