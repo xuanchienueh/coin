@@ -10,22 +10,23 @@ $res_pc: "only screen and (min-width: 992px)";
 @include responsive_pc {
   .container {
     .title_top {
-      height: 50px;
+      height: 3.125rem;
       h3 {
         font-size: 1.2rem;
+        line-height: 3.125rem;
       }
     }
   }
 
   .container.body {
-    width: 534px;
+    width: 33.375rem;
 
     .mt-5 {
       .coin {
-        @include div_main(60px);
+        @include div_main(3.75rem);
       }
       .tygia {
-        @include div_main(96px);
+        @include div_main(6rem);
       }
     }
     .support {
@@ -41,7 +42,7 @@ $res_pc: "only screen and (min-width: 992px)";
             font-size: 1.2rem;
           }
           span {
-            width: 150px;
+            width: 9.375rem;
           }
         }
       }
