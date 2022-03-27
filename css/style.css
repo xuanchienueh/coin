@@ -148,6 +148,7 @@ html {
 #root {
   background: #16181f;
   padding-bottom: 4px;
+  height: 100vh;
 }
 
 .container .title_top {
